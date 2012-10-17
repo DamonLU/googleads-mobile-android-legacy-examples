@@ -124,7 +124,7 @@ public class BannerSamples extends Activity
    * change the app's background color.
    */
   @Override
-  public void onAppEvent(String name, String info) {
+  public void onAppEvent(Ad ad, String name, String info) {
     String message = String.format("Received app event (%s, %s)", name, info);
     Log.d(LOG_TAG, message);
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
