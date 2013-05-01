@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/percentage_house_ads_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your mediation placement ID:"/>
+            <EditText android:id="@+id/publisher_id"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13f8d363e4dc43ae"
+                android:hint="My mediation placement ID"/>
+            <EditText android:id="@+id/percentage"
+                android:inputType="number|numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a percentage (0-100)"/>
+            <Button android:id="@+id/request_ad"
+                android:onClick="requestAdClicked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request Ad"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

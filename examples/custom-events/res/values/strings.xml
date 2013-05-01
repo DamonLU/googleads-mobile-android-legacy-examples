@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdMob Custom Events</string>
+    <string name="percentage_house_ads">Percentage House Ads</string>
+    <string name="birthday_ads">Birthday Ads</string>
+    <string name="in_app_purchase">In App Purchase</string>
+</resources>
