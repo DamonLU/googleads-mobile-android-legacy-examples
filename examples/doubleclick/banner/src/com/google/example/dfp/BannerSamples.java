@@ -39,28 +39,18 @@ import android.widget.Toast;
  *   2. Multiple Ad Sizes
  *   3. App Events
  *
- * Change the SAMPLE_TO_RUN value to run a specific sample. See the DfpSample enum for possible
- * samples to run.
+ * Change the SAMPLE_TO_RUN value to run a specific sample. See the {@link DfpSample} enumeration
+ * for possible samples to run.
+ *
+ * @author api.eleichtenschl@gmail.com (Eric Leichtenschlag)
  */
 public class BannerSamples extends Activity
     implements AdListener, AppEventListener, OnClickListener {
-  /** Samples that this project supports. */
-  private enum DfpSample {
-    STANDARD_BANNER,
-    MULTIPLE_AD_SIZES,
-    APP_EVENTS
-  }
-
   /** The Sample to run. Change this value to run a different sample. */
   private static final DfpSample SAMPLE_TO_RUN = DfpSample.STANDARD_BANNER;
 
   /** The log tag. */
   private static final String LOG_TAG = "BannerSample";
-
-  /** Ad Unit Constants. */
-  private static final String AD_UNIT_STANDARD_BANNER = "/6253334/dfp_example_ad/banner";
-  private static final String AD_UNIT_MULTIPLE_SIZES = "/6253334/dfp_example_ad/multisize";
-  private static final String AD_UNIT_APP_EVENTS = "/6253334/dfp_example_ad/appevents";
 
   /** The view to show the ad. */
   private DfpAdView adView;
@@ -76,19 +66,19 @@ public class BannerSamples extends Activity
       case STANDARD_BANNER:
         // Example 1. Using sample DFP banner.
         setContentView(R.layout.main);
-        adView = new DfpAdView(this, AdSize.BANNER, AD_UNIT_STANDARD_BANNER);
+        adView = new DfpAdView(this, AdSize.BANNER, DfpSample.STANDARD_BANNER.adunitId);
         break;
       case MULTIPLE_AD_SIZES:
         // Example 2. Using multiple ad sizes.
         // This ad unit supports the following sizes: (320x250, 300x250, 120x20)
         setContentView(R.layout.refresh);
         AdSize[] adSizes = { AdSize.BANNER, AdSize.IAB_MRECT, new AdSize(120, 20)};
-        adView = new DfpAdView(this, adSizes, AD_UNIT_MULTIPLE_SIZES);
+        adView = new DfpAdView(this, adSizes, DfpSample.MULTIPLE_AD_SIZES.adunitId);
         break;
       case APP_EVENTS:
         // Example 3. Using app events.
         setContentView(R.layout.refresh);
-        adView = new DfpAdView(this, AdSize.BANNER, AD_UNIT_APP_EVENTS);
+        adView = new DfpAdView(this, AdSize.BANNER, DfpSample.APP_EVENTS.adunitId);
         adView.setAppEventListener(this);
         break;
     }
