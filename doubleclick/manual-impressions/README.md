@@ -37,5 +37,7 @@ Requirements:
 Additional Resources:
 ======================
 Docs - https://developers.google.com/mobile-ads-sdk/docs
+
 Forum - https://groups.google.com/group/google-admob-ads-sdk
+
 Google+ Page - https://plus.google.com/+GoogleAdsDevelopers
