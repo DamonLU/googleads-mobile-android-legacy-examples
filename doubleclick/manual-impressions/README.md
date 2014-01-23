@@ -1,4 +1,6 @@
-========================================================================
+Terms
+======
+
 Copyright 2013, Google Inc. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +14,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-========================================================================
+
+About
+======
 
 This sample shows how DFP ad impressions can be recorded manually when an ad
 sits inside a ViewPager. The sample waits for the ad to be returned and
@@ -23,13 +27,15 @@ This sample was written and tested with Google Admob SDK v6.4.1, and
 supports Android 1.6 or higher. It also requires the Android Support library.
 
 Requirements:
-- Android SDK 3.2 or higher
-- Google AdMob Ads SDK for Android v6.4 or higher
-- Android support library (for download directions, see
+=============
+* Android SDK 3.2 or higher
+* Google AdMob Ads SDK for Android v6.4 or higher
+* Android support library (for download directions, see
   http://developer.android.com/tools/extras/support-library.html#Downloading
-- AdMob ad unit ID
+* AdMob ad unit ID
 
 Additional Resources:
+======================
 Docs - https://developers.google.com/mobile-ads-sdk/docs
 Forum - https://groups.google.com/group/google-admob-ads-sdk
 Google+ Page - https://plus.google.com/+GoogleAdsDevelopers
