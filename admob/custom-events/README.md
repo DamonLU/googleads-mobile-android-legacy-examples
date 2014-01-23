@@ -36,5 +36,7 @@ Additional Resources:
 =====================
 
 https://support.google.com/admob/answer/2413211
+
 https://developers.google.com/mobile-ads-sdk/training/mediation/custom-events/banners
+
 https://developers.google.com/mobile-ads-sdk/
